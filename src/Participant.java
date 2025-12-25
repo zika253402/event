@@ -1,17 +1,15 @@
-public class Participant {
+public class Participant extends Person{
     private String name;
     private int age;
 
     public Participant(String name, int age) {
-        this.name = name;
+        super(name);
         this.age = age;
     }
 
-    public String gatName() { return name; }
-    public int getAge() { return age; }
-
-    public void setName(String name) { this.name = name; }
-    public void setAge(int age) { this.age = age; }
+    public int getAge() {
+        return age;
+    }
 
     @Override
     public String toString() {
